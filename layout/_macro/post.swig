@@ -65,12 +65,15 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              {% if theme.post_meta.item_text %}
-                <span class="post-meta-item-text">{{ __('post.posted') }}</span>
-              {% endif %}
               <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
                 {{ date(post.date, config.date_format) }}
               </time>
+              {% if post.location and post.location.length %}
+                {% if theme.post_meta.item_text %}
+                  <span class="post-meta-item-text">{{ __('post.posted') }}</span>
+                {% endif %}
+                {{post.location}}
+              {% endif %}
             {% endif %}
 
             {% if theme.post_meta.created_at and theme.post_meta.updated_at %}
