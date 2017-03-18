@@ -135,6 +135,7 @@ font:
 social:
   GitHub: https://github.com/fmyblack
   知乎: https://www.zhihu.com/people/fmyblack
+  email: mailto:fmyblack@gmail.com
   #LinkLabel: Link
 
 reward_comment: 我想找到丸子
@@ -152,6 +153,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  email: envelope
 
 
 # Sidebar Avatar
